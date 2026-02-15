@@ -7,8 +7,8 @@ const services = [
   { id: 940, name: 'Instagram likes - Superfast', price: 29, min: 500, max: 100000, hot: false },
   { id: 927, name: 'Instagram Views Cheapest [ All Videos ] - Trending 🔥', price: 29, min: 10000, max: 10000000, hot: true },
   { id: 928, name: 'Instagram comments - [Custom] - Instant', price: 499, min: 100, max: 1000, hot: false },
-  { id: 930, name: 'Instagram Reposts Cheapest [ All Videos ] - Trending 🔥', price: 1000, min: 105, max: 10000, hot: true },
-  { id: 951, name: 'Instagram Shares Cheapest - Instant', price: 999, min: 150, max: 5000, hot: false },
+  { id: 930, name: 'Instagram Reposts Cheapest [ All Videos ] - Trending 🔥', price: 149, min: 105, max: 10000, hot: true },
+  { id: 951, name: 'Instagram Shares Cheapest - Instant', price: 149, min: 150, max: 5000, hot: false },
   { id: 952, name: 'Canva Premium 1 Year', price: 199, min: 1, max: 10, hot: false },
   { id: 953, name: 'Amazon Prime Premium', price: 249, min: 1, max: 10, hot: false },
 ];
