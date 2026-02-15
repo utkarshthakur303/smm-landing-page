@@ -40,7 +40,7 @@ export const Hero = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/+918469836899"
               className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-green-500/25 flex items-center justify-center gap-2 group"
             >
               <MessageCircle className="group-hover:scale-110 transition-transform" />
