@@ -1,0 +1,90 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Dark Theme Default */
+  --background: #0E1117;
+  --foreground: #ffffff;
+  
+  --card: #161B22;
+  --card-foreground: #ffffff;
+  
+  --popover: #161B22;
+  --popover-foreground: #ffffff;
+  
+  --primary: #3B82F6; /* Electric Blue */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #1F2937;
+  --secondary-foreground: #ffffff;
+  
+  --muted: #1F2937;
+  --muted-foreground: #9CA3AF;
+  
+  --accent: #1F2937;
+  --accent-foreground: #ffffff;
+  
+  --destructive: #EF4444;
+  --destructive-foreground: #ffffff;
+  
+  --border: #1F2937;
+  --input: #1F2937;
+  --ring: #3B82F6;
+  
+  --radius: 0.75rem; /* 12px */
+  
+  --font-size: 16px;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  /* Chart Colors (kept for compatibility) */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space;
+  }
+}
