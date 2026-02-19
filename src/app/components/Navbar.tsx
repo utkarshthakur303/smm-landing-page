@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { CountdownTimer } from './CountdownTimer';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,17 +62,22 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <a
-            href="https://wa.me/+916359244514" // Replace with actual number
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-green-500/20 hover:shadow-green-500/40"
-          >
-            <MessageCircle size={18} />
-            Chat on WhatsApp
-          </a>
+        {/* Countdown Timer & CTA Button */}
+        <div className="flex items-center gap-2 md:gap-4">
+          <CountdownTimer variant="compact" />
+          
+          {/* CTA Button - Desktop */}
+          <div className="hidden md:block">
+            <a
+              href="https://wa.me/+916359244514"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-green-500/20 hover:shadow-green-500/40"
+            >
+              <MessageCircle size={18} />
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}

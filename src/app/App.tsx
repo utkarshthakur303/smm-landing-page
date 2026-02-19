@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Stats } from './components/Stats';
 import { WhyUs } from './components/WhyUs';
+import { CountdownTimer } from './components/CountdownTimer';
 import { Services } from './components/Services';
 import { HowItWorks } from './components/HowItWorks';
 import { Testimonials } from './components/Testimonials';
@@ -17,6 +18,7 @@ export default function App() {
       <Hero />
       <Stats />
       <WhyUs />
+      <CountdownTimer variant="full" />
       <Services />
       <HowItWorks />
       <Testimonials />
