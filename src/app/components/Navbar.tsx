@@ -64,7 +64,7 @@ export const Navbar = () => {
         {/* CTA Button */}
         <div className="hidden md:block">
           <a
-            href="https://wa.me/+918469836899" // Replace with actual number
+            href="https://wa.me/+916359244514" // Replace with actual number
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-green-500/20 hover:shadow-green-500/40"
@@ -107,7 +107,7 @@ export const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="https://wa.me/+918469836899"
+                href="https://wa.me/+916359244514"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-green-600 text-white px-5 py-3 rounded-xl text-sm font-semibold w-full mt-4"

@@ -86,7 +86,7 @@ export const Services = () => {
                     </td>
                     <td className="px-6 py-4 text-center">
                       <a 
-                        href={`https://wa.me/+918469836899?text=I want to order service ID ${service.id}: ${service.name}`}
+                        href={`https://wa.me/+916359244514?text=I want to order service ID ${service.id}: ${service.name}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-white/5 hover:bg-green-600/20 hover:text-green-400 hover:border-green-500/50 text-gray-300 px-4 py-2 rounded-lg text-xs font-semibold border border-white/10 transition-all duration-300"

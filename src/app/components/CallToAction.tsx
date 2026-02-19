@@ -25,7 +25,7 @@ export const CallToAction = () => {
           </p>
           
           <a
-            href="https://wa.me/+918469836899" 
+            href="https://wa.me/+916359244514" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-5 rounded-full text-lg font-bold hover:bg-gray-100 hover:scale-105 transition-all shadow-2xl hover:shadow-white/20"
