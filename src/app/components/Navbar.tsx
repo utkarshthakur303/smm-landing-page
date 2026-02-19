@@ -38,7 +38,7 @@ export const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
-            <span className="text-white font-bold text-lg">S</span>
+            <span className="text-white font-bold text-lg">Cr</span>
           </div>
           <span className="text-white font-bold text-xl tracking-tight">CrownReach</span>
         </div>
