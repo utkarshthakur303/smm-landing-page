@@ -12,7 +12,7 @@ export const Footer = () => {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
               <span className="text-white font-bold text-lg">S</span>
             </div>
-            <span className="text-white font-bold text-xl tracking-tight">SMMBoost</span>
+            <span className="text-white font-bold text-xl tracking-tight">Crownreach</span>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             We are the leading provider of high-quality social media marketing services. Boost your presence on Instagram, YouTube, and Facebook instantly.
@@ -65,7 +65,7 @@ export const Footer = () => {
             </li>
             <li className="flex items-center gap-3">
               <Mail size={18} className="text-blue-500" />
-              <span>support@smmboost.com</span>
+              <span>support@Crownreach.com</span>
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={18} className="text-purple-500 mt-0.5" />
@@ -86,7 +86,7 @@ export const Footer = () => {
       </div>
 
       <div className="container mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center text-sm text-gray-500">
-        <p>&copy; {new Date().getFullYear()} SMMBoost. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Crownreach. All rights reserved.</p>
       </div>
     </footer>
   );

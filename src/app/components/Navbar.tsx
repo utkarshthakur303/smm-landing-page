@@ -40,7 +40,7 @@ export const Navbar = () => {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
             <span className="text-white font-bold text-lg">S</span>
           </div>
-          <span className="text-white font-bold text-xl tracking-tight">SMMBoost</span>
+          <span className="text-white font-bold text-xl tracking-tight">CrownReach</span>
         </div>
 
         {/* Desktop Navigation */}
