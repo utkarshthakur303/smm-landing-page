@@ -9,6 +9,7 @@ import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { CallToAction } from './components/CallToAction';
 import { Footer } from './components/Footer';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <FAQ />
       <CallToAction />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

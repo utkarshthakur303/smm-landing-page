@@ -8,16 +8,34 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+    let rafId: number | null = null;
+    let lastIsScrolled = false;
+
+    const computeIsScrolled = () => window.scrollY > 20;
+
+    const commit = () => {
+      rafId = null;
+      const next = computeIsScrolled();
+      if (next !== lastIsScrolled) {
+        lastIsScrolled = next;
+        setIsScrolled(next);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => {
+      if (rafId != null) return;
+      rafId = window.requestAnimationFrame(commit);
+    };
+
+    // Initialize immediately so refresh mid-page shows correct state
+    lastIsScrolled = computeIsScrolled();
+    setIsScrolled(lastIsScrolled);
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (rafId != null) window.cancelAnimationFrame(rafId);
+    };
   }, []);
 
   const navLinks = [
