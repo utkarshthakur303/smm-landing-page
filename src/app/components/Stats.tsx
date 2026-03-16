@@ -10,22 +10,32 @@ const StatCard = ({ icon: Icon, value, label, suffix = "" }) => {
 
   useEffect(() => {
     if (isInView) {
-      let start = 0;
       const end = parseInt(value.replace(/,/g, ''));
       const duration = 2000;
-      const increment = end / (duration / 16); // 60fps
+      const startTime = performance.now();
+      let rafId = 0;
+      let lastRendered = -1;
 
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= end) {
-          setCount(end);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(start));
+      const tick = (now: number) => {
+        const elapsed = now - startTime;
+        const progress = Math.min(1, elapsed / duration);
+        const next = Math.floor(end * progress);
+
+        // Avoid redundant state updates/renders
+        if (next !== lastRendered) {
+          lastRendered = next;
+          setCount(next);
         }
-      }, 16);
 
-      return () => clearInterval(timer);
+        if (progress < 1) {
+          rafId = requestAnimationFrame(tick);
+        } else if (lastRendered !== end) {
+          setCount(end);
+        }
+      };
+
+      rafId = requestAnimationFrame(tick);
+      return () => cancelAnimationFrame(rafId);
     }
   }, [isInView, value]);
 
